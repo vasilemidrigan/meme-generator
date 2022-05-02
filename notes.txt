@@ -1,0 +1,22 @@
+Static webapp:
+ - is a read-only website
+ - we can't update, interact with the website
+
+Dynamic webapps:
+  - Read-Write: ability to change data
+  - Highly interactive
+  - Displays your data 
+  - Examples:
+    - Bank website
+    - Airbnb
+    - Reddit
+    - Twitter
+    - etc
+
+In this module we'll learn about:
+ - Event listeners
+ - State
+ - Conditional rendering
+ - Forms
+ - Side effects
+ 
