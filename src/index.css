@@ -8,7 +8,7 @@ html {
   font-family: "Karla", sans-serif;
 }
 
-/* header */
+/* Header */
 
 .header {
   background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
@@ -36,4 +36,35 @@ html {
   font-size: 12px;
   line-height: 15px;
   text-align: right;
+}
+
+/* Meme */
+
+.meme {
+  padding: 2.25rem;
+}
+
+.meme__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.0625rem;
+}
+
+.meme__form__input {
+  height: 2.5rem;
+  flex-grow: 1;
+}
+
+.meme__form__btn {
+  width: 100%;
+  height: 2.5rem;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: #fff;
+}
+
+.meme__form__input,
+.meme__form__btn {
+  border: none;
+  border: 1px solid gainsboro;
+  border-radius: 0.3125rem;
 }
