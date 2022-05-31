@@ -1,14 +1,11 @@
-import React from "react";
-import trollFace from "../images/troll-face.png";
+import trollFace from "../img/troll-face.png";
 
 export default function Header() {
   return (
-    <header className="header">
-      <div className="header--logo">
-        <img src={trollFace} className="header--image" alt="troll face" />
-        <h3 className="header--logo_text">Meme Generator</h3>
-      </div>
-      <div className="header--course_id">React Course - Project 3</div>
-    </header>
+    <div className="header">
+      <img className="header__img" src={trollFace} alt="Troll face logo" />
+      <h3 className="header__h3">Meme Generator</h3>
+      <div className="header__course-version">React Course - project 3</div>
+    </div>
   );
 }

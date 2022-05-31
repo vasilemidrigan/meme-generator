@@ -20,3 +20,10 @@ In this module we'll learn about:
  - Forms
  - Side effects
  
+
+ What is covered in this project:
+ - Event listeners
+ - State
+ - Conditional rendering
+ - Forms
+ - Side effects
