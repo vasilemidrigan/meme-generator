@@ -1,7 +1,7 @@
 export default function Meme() {
   return (
     <div className="meme">
-      <form className="meme__form" action="">
+      <div className="meme__form" action="">
         <input
           className="meme__form__input"
           type="text"
@@ -15,7 +15,11 @@ export default function Meme() {
         <button className="meme__form__btn" type="submit">
           Get a new meme image 🖼
         </button>
-      </form>
+      </div>
     </div>
   );
 }
+
+// In this case, we're not use form to wrap our
+//   inputs and button because there just no need
+//   to submit the info from inputs.
