@@ -8,6 +8,11 @@ html {
   font-family: "Karla", sans-serif;
 }
 
+/* App */
+.app {
+  max-width: 31.25rem;
+}
+
 /* Header */
 
 .header {
@@ -20,21 +25,21 @@ html {
 }
 
 .header__img {
-  width: 1.9375rem;
+  max-width: 1.9375rem;
   height: 1.625rem;
 }
 
 .header__h3 {
   font-size: 20.7482px;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: -0.1em;
   margin-right: auto;
 }
 
 .header__course-version {
   font-family: "Inter", sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   text-align: right;
 }
 
@@ -51,7 +56,7 @@ html {
 }
 
 .meme__form__input {
-  padding-left: 15px;
+  padding-left: 0.9375rem;
   height: 2.5rem;
   flex-grow: 1;
 }
@@ -62,10 +67,11 @@ html {
 }
 
 .meme__form__btn {
-  width: 100%;
-  height: 2.5rem;
   background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
   color: #fff;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.9375rem;
   cursor: pointer;
 }
 
@@ -78,5 +84,5 @@ html {
 
 /* Meme Image */
 .meme__img {
-  width: 100%;
+  max-width: 100%;
 }

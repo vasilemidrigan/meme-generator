@@ -44,8 +44,6 @@ In this module we'll learn about:
   (it doesn't make any sense for a function to 
   modify the parameters it's receiving)
 
-Notes:
-
 1. How would you describe the concept of "state"?
 A way for React to remember saved values from within a component.
 This is similar to declaring variables from within a component,
@@ -67,7 +65,7 @@ when React re-renders the component).
 4. What does "immutable" mean? Are props immutable? Is state immutable?
 Unchanging. Props are immutable. State is mutable.
 
-  State Setter Function:
+----------------- State Setter Function:
 
  * Note: if you ever need the old value of state
      * to help you determine the new value of state,
@@ -96,3 +94,5 @@ what the new value of state should be.
 3. When would you want to pass the second option (from answer
    above) to the state setter function?
 Whenever you DO need the previous value to determine the new value 
+
+-------------------  Ternary Operator 
