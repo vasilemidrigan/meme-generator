@@ -66,6 +66,7 @@ html {
   height: 2.5rem;
   background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
   color: #fff;
+  cursor: pointer;
 }
 
 .meme__form__input,
@@ -73,4 +74,9 @@ html {
   border: none;
   border: 1px solid gainsboro;
   border-radius: 0.3125rem;
+}
+
+/* Meme Image */
+.meme__img {
+  width: 100%;
 }
