@@ -95,4 +95,18 @@ what the new value of state should be.
    above) to the state setter function?
 Whenever you DO need the previous value to determine the new value 
 
--------------------  Ternary Operator 
+------------- Re-rendering a component
+
+• Everytime we change the state of the component, React
+  will re-render it, say we have a count state inside
+  our App component which is passed to header, main and
+  state, in this case they will re-render to, in order
+  from top to bottom:
+  App, header/main/footer
+
+
+  For ex: 
+  <App>
+  - <Header>
+  - <Main>
+  - <Footer>  
