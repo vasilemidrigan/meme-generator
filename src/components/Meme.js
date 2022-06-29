@@ -10,8 +10,6 @@ export default function Meme() {
 
   const [allMeme, setAllMeme] = React.useState(memesData);
 
-  React.useEffect(() => {});
-
   function getMemeImage() {
     const randomURL = allMeme.data.memes[Math.floor(Math.random() * 100)].url;
     setMeme((prevMeme) => {
@@ -21,6 +19,15 @@ export default function Meme() {
       };
     });
   }
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      [name]: value,
+    }));
+  }
+
   return (
     <div className="meme">
       <div className="meme__form" action="">
@@ -28,11 +35,17 @@ export default function Meme() {
           className="meme__form__input"
           type="text"
           placeholder="top text"
+          name="topText"
+          value={meme.topText}
+          onChange={handleChange}
         />
         <input
           className="meme__form__input"
           type="text"
           placeholder="bottom text"
+          name="bottomText"
+          value={meme.bottomText}
+          onChange={handleChange}
         />
         <button
           className="meme__form__btn"
@@ -42,7 +55,11 @@ export default function Meme() {
           Get a new meme image 🖼
         </button>
       </div>
-      <img className="meme__img" src={meme.randomImage} />
+      <div className="meme">
+        <img className="meme__img" src={meme.randomImage} />
+        <h2 className="meme__text top">{meme.topText}</h2>
+        <h2 className="meme__text bottom">{meme.bottomText}</h2>
+      </div>
     </div>
   );
 }
